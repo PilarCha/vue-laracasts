@@ -11,9 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css">
   </head>
   <body>
+
     <div id="root" class="container">
-      <bulma-message title="Hello World" body="Lorem"></bulma-message>
+      <modal v-if="showModal" @close="showModal=false">
+        <p>Eat that butt</p>
+      </modal>
+      <button type="button" name="button" @click="showModal=true">Show Modal</button>
     </div>
+
+
         <script src="https://cdn.jsdelivr.net/npm/vue" charset="utf-8"></script>
         <script src="main.js"></script>
   </body>
