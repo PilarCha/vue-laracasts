@@ -7,13 +7,14 @@
   </head>
   <body>
     <div id="app">
-      <modal>
+      <button type="button" @click="showModal=true" name="button">Click to show Modal</button>
+      <modal v-if="showModal">
         <template slot="header">
           Baby Garbanxo
         </template>
         <template slot="footer">
           <a class="button is-primary">Save Changes</a>
-          <a class="button">Cancel</a>
+          <a class="button" @click="showModal=false">Cancel</a>
         </template>
         Here is my main content
       </modal>

@@ -16,11 +16,12 @@ Vue.component('modal', {
           <slot name="footer"></slot>
         </footer>
       </div>
-    </div>`,
-
-
+    </div>`
 })
 
 new Vue({
-  el: '#app'
+  el: '#app',
+  data: {
+    showModal: false
+  }
 })
