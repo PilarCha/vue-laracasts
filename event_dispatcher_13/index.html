@@ -10,9 +10,7 @@
   </head>
   <body>
     <div id="root" class="container">
-      <coupon></coupon>
-      <h1 v-if="isApplied"> The coupon was applied</h1>
-
+      <coupon @applied= "onCouponaApplied"></coupon>
 
     </div>
   <script src="https://cdn.jsdelivr.net/npm/vue" charset="utf-8"></script>
